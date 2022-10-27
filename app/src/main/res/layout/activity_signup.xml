@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Username"
+        android:hint="Username"
         tools:layout_editor_absoluteX="100dp"
         tools:layout_editor_absoluteY="139dp" />
 
@@ -23,14 +23,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Email" />
+        android:hint="Email" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:text="Password"
+        android:hint="Password"
         android:inputType="textPassword" />
 
     <Button
