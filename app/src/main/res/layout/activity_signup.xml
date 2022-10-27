@@ -34,12 +34,13 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_margin="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#423422"
-        android:text="Login" />
+        android:text="Sign up"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/black"
+        android:id="@+id/signup"
+        android:layout_margin="30dp" />
 
 
 
