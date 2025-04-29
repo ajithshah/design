@@ -1,0 +1,196 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: aws-ind-aps1-m2p-hub-non-prod
+  description: Resources created in the catalog-info.yaml
+  annotations:
+    github.com/project-slug: 'm2pfintech/aws-ind-aps1-m2p-hub-non-prod'
+    docker.com/repository: value
+spec:
+  type: aws
+  "VPC-01":
+  "subnet_az_details":
+    "DEV-APP-SUBNETS":
+      "APP-PVT":
+        "ap-south-1a": "subnet-0a7a351668be50c9f"
+        "ap-south-1b": "subnet-040884ad4aa713372"
+      "DB-PVT":
+        "ap-south-1a": "subnet-0b38842c6bb372a47"
+        "ap-south-1b": "subnet-07c160829eb4752d6"
+      "K8S-POD-PVT":
+        "ap-south-1a": "subnet-038ce71148bbd8b68"
+        "ap-south-1b": "subnet-01567c8943a4af6b1"
+      "K8S-PVT":
+        "ap-south-1a": "subnet-0219b7f3b41490860"
+        "ap-south-1b": "subnet-0bfd96bd9d77d4038"
+      "WEB-PVT":
+        "ap-south-1a": "subnet-044f4bf4f9adb41b4"
+        "ap-south-1b": "subnet-0a63315ad10f263d6"
+    "DEV-TOOLS-SUBNETS":
+      "APP-PVT":
+        "ap-south-1a": "subnet-0c734cdf73c6e2e2f"
+        "ap-south-1b": "subnet-01bb34a425323a47e"
+      "DB-PVT":
+        "ap-south-1a": "subnet-034694e265a80fe23"
+        "ap-south-1b": "subnet-0f1dd84cbe5620bf8"
+      "K8S-POD-PVT":
+        "ap-south-1a": "subnet-0cf9834e33127efc8"
+        "ap-south-1b": "subnet-0665a78092677cbb1"
+      "K8S-PVT":
+        "ap-south-1a": "subnet-0e51b12200a9e2241"
+        "ap-south-1b": "subnet-000f281421f2f30a0"
+      "WEB-PVT":
+        "ap-south-1a": "subnet-076c9029707cf4e07"
+        "ap-south-1b": "subnet-0d604e3d3000e0527"
+    "INFOSEC-SUBNETS":
+      "TOOLS-PVT":
+        "ap-south-1a": "subnet-09c53fc1262b18a6c"
+        "ap-south-1b": "subnet-0c5f8fe5c7413f5a9"
+      "WEB-PUB":
+        "ap-south-1a": "subnet-0e009f48e94585689"
+        "ap-south-1b": "subnet-01b28dabb15aaa0a9"
+      "WEB-PVT":
+        "ap-south-1a": "subnet-02d659f11bab78b6e"
+        "ap-south-1b": "subnet-0ceca2e92a54e7d63"
+    "INFRA-SUBNETS":
+      "DB-PVT":
+        "ap-south-1a": "subnet-0922878733f1d4b48"
+        "ap-south-1b": "subnet-0c79cb3ccd4f9a0a1"
+      "JUMP-PVT":
+        "ap-south-1a": "subnet-062c7ff86c34eb94a"
+        "ap-south-1b": "subnet-04b86db22b8f8d3cd"
+      "K8S-POD-PVT":
+        "ap-south-1a": "subnet-0f123b18286e4445e"
+        "ap-south-1b": "subnet-037eee2ae0685220d"
+      "K8S-PVT":
+        "ap-south-1a": "subnet-021e60b959a95cf82"
+        "ap-south-1b": "subnet-0dd1b1d580ff2815d"
+      "TGW-PVT":
+        "ap-south-1a": "subnet-086176a8716ff1283"
+        "ap-south-1b": "subnet-0235c331f7a3e1194"
+      "TOOLS-PVT":
+        "ap-south-1a": "subnet-0b32f94c78aa6228e"
+        "ap-south-1b": "subnet-0158ee4618e615a59"
+      "WEB-PVT":
+        "ap-south-1a": "subnet-0128675654261e0c4"
+        "ap-south-1b": "subnet-0bb34af05970534cb"
+    "PUB-INGRESS-SUBNETS":
+      "WEB-PUB":
+        "ap-south-1a": "subnet-0983954578f1cc3a6"
+        "ap-south-1b": "subnet-0234e8fe4ce2105ed"
+    "UAT-APP-SUBNETS":
+      "APP-PVT":
+        "ap-south-1a": "subnet-0fbc0d961a19f9777"
+        "ap-south-1b": "subnet-091468f5f49260555"
+      "DB-PVT":
+        "ap-south-1a": "subnet-0f2d3a7b1a65a2f16"
+        "ap-south-1b": "subnet-0afcbf2d1e6b7f478"
+      "K8S-POD-PVT":
+        "ap-south-1a": "subnet-0cf4fe081165bfb2e"
+        "ap-south-1b": "subnet-0372d542b503acf46"
+      "K8S-PVT":
+        "ap-south-1a": "subnet-0bc0847d1d3e13723"
+        "ap-south-1b": "subnet-0db3b5525483dc573"
+      "WEB-PVT":
+        "ap-south-1a": "subnet-0c0f92156aa03129b"
+        "ap-south-1b": "subnet-0ce8c2d6047b7cd78"
+  "subnet_cidr_details":
+    "DEV-APP-SUBNETS":
+      "APP-PVT":
+        "10.126.36.0/23": "subnet-0a7a351668be50c9f"
+        "10.126.38.0/23": "subnet-040884ad4aa713372"
+      "DB-PVT":
+        "10.126.40.0/23": "subnet-0b38842c6bb372a47"
+        "10.126.42.0/23": "subnet-07c160829eb4752d6"
+      "K8S-POD-PVT":
+        "10.201.64.0/19": "subnet-038ce71148bbd8b68"
+        "10.201.96.0/19": "subnet-01567c8943a4af6b1"
+      "K8S-PVT":
+        "10.126.48.0/21": "subnet-0219b7f3b41490860"
+        "10.126.56.0/21": "subnet-0bfd96bd9d77d4038"
+      "WEB-PVT":
+        "10.126.32.0/23": "subnet-044f4bf4f9adb41b4"
+        "10.126.34.0/23": "subnet-0a63315ad10f263d6"
+    "DEV-TOOLS-SUBNETS":
+      "APP-PVT":
+        "10.125.8.64/27": "subnet-0c734cdf73c6e2e2f"
+        "10.125.8.96/27": "subnet-01bb34a425323a47e"
+      "DB-PVT":
+        "10.125.8.128/27": "subnet-034694e265a80fe23"
+        "10.125.8.160/27": "subnet-0f1dd84cbe5620bf8"
+      "K8S-POD-PVT":
+        "10.200.32.0/20": "subnet-0cf9834e33127efc8"
+        "10.200.48.0/20": "subnet-0665a78092677cbb1"
+      "K8S-PVT":
+        "10.125.9.0/25": "subnet-0e51b12200a9e2241"
+        "10.125.9.128/25": "subnet-000f281421f2f30a0"
+      "WEB-PVT":
+        "10.125.8.0/27": "subnet-076c9029707cf4e07"
+        "10.125.8.32/27": "subnet-0d604e3d3000e0527"
+    "INFOSEC-SUBNETS":
+      "TOOLS-PVT":
+        "10.125.2.0/25": "subnet-09c53fc1262b18a6c"
+        "10.125.2.128/25": "subnet-0c5f8fe5c7413f5a9"
+      "WEB-PUB":
+        "10.125.0.0/25": "subnet-0e009f48e94585689"
+        "10.125.0.128/25": "subnet-01b28dabb15aaa0a9"
+      "WEB-PVT":
+        "10.125.1.0/25": "subnet-02d659f11bab78b6e"
+        "10.125.1.128/25": "subnet-0ceca2e92a54e7d63"
+    "INFRA-SUBNETS":
+      "DB-PVT":
+        "10.125.4.160/28": "subnet-0922878733f1d4b48"
+        "10.125.4.176/28": "subnet-0c79cb3ccd4f9a0a1"
+      "JUMP-PVT":
+        "10.125.4.64/28": "subnet-062c7ff86c34eb94a"
+        "10.125.4.80/28": "subnet-04b86db22b8f8d3cd"
+      "K8S-POD-PVT":
+        "10.200.0.0/20": "subnet-0f123b18286e4445e"
+        "10.200.16.0/20": "subnet-037eee2ae0685220d"
+      "K8S-PVT":
+        "10.125.5.0/25": "subnet-021e60b959a95cf82"
+        "10.125.5.128/25": "subnet-0dd1b1d580ff2815d"
+      "TGW-PVT":
+        "10.125.4.0/28": "subnet-086176a8716ff1283"
+        "10.125.4.16/28": "subnet-0235c331f7a3e1194"
+      "TOOLS-PVT":
+        "10.125.4.128/27": "subnet-0158ee4618e615a59"
+        "10.125.4.96/27": "subnet-0b32f94c78aa6228e"
+      "WEB-PVT":
+        "10.125.4.32/28": "subnet-0128675654261e0c4"
+        "10.125.4.48/28": "subnet-0bb34af05970534cb"
+    "PUB-INGRESS-SUBNETS":
+      "WEB-PUB":
+        "10.125.12.0/24": "subnet-0983954578f1cc3a6"
+        "10.125.13.0/24": "subnet-0234e8fe4ce2105ed"
+    "UAT-APP-SUBNETS":
+      "APP-PVT":
+        "10.126.4.0/23": "subnet-0fbc0d961a19f9777"
+        "10.126.6.0/23": "subnet-091468f5f49260555"
+      "DB-PVT":
+        "10.126.10.0/23": "subnet-0afcbf2d1e6b7f478"
+        "10.126.8.0/23": "subnet-0f2d3a7b1a65a2f16"
+      "K8S-POD-PVT":
+        "10.201.0.0/19": "subnet-0cf4fe081165bfb2e"
+        "10.201.32.0/19": "subnet-0372d542b503acf46"
+      "K8S-PVT":
+        "10.126.16.0/21": "subnet-0bc0847d1d3e13723"
+        "10.126.24.0/21": "subnet-0db3b5525483dc573"
+      "WEB-PVT":
+        "10.126.0.0/23": "subnet-0c0f92156aa03129b"
+        "10.126.2.0/23": "subnet-0ce8c2d6047b7cd78"
+  "vpc_cidr": "10.125.0.0/16"
+  "vpc_id": "vpc-0dde6a20ec9b5f5f3"
+
+  "security_group":
+  "EKS": "sg-007dbe356dfd28e8a"
+  "INFRA": "sg-0e02096ba810e01bf"
+  "PUB-RES-LB": "sg-0d1510f83fbc66bfd"
+  "PVT-LB": "sg-0919a5a11ec0ea6ca"
+  "PVT-NLB": "sg-02ea950737b1feef7"
+
+  owner: pe-automation
+  system: PE-automation
+  dependencyOf:
+    - component:default/aws-ind-aps1-m2p-hub-non-prod
+  lifecycle: NON-PROD
